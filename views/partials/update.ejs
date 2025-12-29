@@ -1,0 +1,18 @@
+<%if(locals.selectedBlog){%>
+    <form method="POST" action="/update/<%=selectedBlog.id%>">
+    <input type="text" name="title" value="<%= selectedBlog.title %>">
+    <textarea name="content"><%= selectedBlog.content %></textarea>
+    <button type="submit">Update</button>
+    </form>
+<%}else{%>
+    <h2>Select Blog to update</h2>
+    <ul>
+        <% blogList.forEach(blog => { %>
+            <li>
+            <%= blog.title %>
+            <a href="/update/<%= blog.id %>">Edit</a>
+            </li>
+        <% }) %>
+    </ul>
+<%}%>
+

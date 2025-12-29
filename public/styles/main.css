@@ -1,0 +1,13 @@
+label {
+    display: block;
+}
+.view{
+    display: flex;
+    justify-content: left;
+    height: 80vh;
+    background-color: aqua;
+}
+.content{
+    width: 80vw;
+    background-color: rgb(145, 202, 202);
+}

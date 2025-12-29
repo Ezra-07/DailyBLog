@@ -1,0 +1,17 @@
+<%if(locals.selectedBlog){%>
+    <form method="POST" action="/delete/<%=selectedBlog.id%>">
+    <label>Confirm delete</label>
+    <button type="submit">Delete</button>
+    </form>
+<%}else{%>
+    <h2>Select Blog to delete</h2>
+    <ul>
+        <% blogList.forEach(blog => { %>
+            <li>
+            <%= blog.title %>
+            <a href="/delete/<%= blog.id %>">Delete</a>
+            </li>
+        <% }) %>
+    </ul>
+<%}%>
+
