@@ -115,6 +115,6 @@ textarea{
     cursor: pointer;
 }
 ::selection {
-  background: #ff6347; /* Change to your desired highlight color (e.g., Tomato) */
-  color: #ffffff;      /* Change to your desired text color (e.g., White) */
+  background: #ff6347;
+  color: #ffffff;     
 }
