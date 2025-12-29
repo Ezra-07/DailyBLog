@@ -1,7 +1,7 @@
 import express from "express";
 const router=express.Router();
 import storage from "../data/items.js";
-let nextId=1;
+let nextId=6;
 function addBlog(req){
     storage.blogs.push({
         id:nextId++,

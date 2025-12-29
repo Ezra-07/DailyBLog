@@ -1,13 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    color: white;
+    background-color: black;
+}
+h1{
+    font-size: 40px;
+}
+ul{
+    padding: 8px;
+}
+li{
+    font-size: 20px;
+}
+a:link,a:visited,a:active{
+    color: #D3C0B2;
+    font-size: 18px;
+}
+a:hover{
+    color: #D3C0B2;
+    font-size: 20px;
+}
 label {
     display: block;
+    font-size: 20px;
+    margin-top: 2px;
+    margin-bottom: 7px;
 }
 .view{
+    margin-top: 15px;
+    margin-bottom: 15px;
     display: flex;
     justify-content: left;
     height: 80vh;
-    background-color: aqua;
 }
 .content{
+    padding: 20px;
     width: 80vw;
-    background-color: rgb(145, 202, 202);
+    background-color: #1e1e1e;
+}
+.sidebar{
+    padding: 10px;
+    width: 20vw;
+    background-color:#4d4d4d;
+}
+#title{
+    margin: 5px;
+    text-align: center;
+}
+.buttonHolder{
+    padding: 3px;
+}
+.btn{
+    font-size: 18px;
+    height: 30px;
+    width: 70px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 10px;
+}
+.btn:hover{
+    color: white;
+    background-color:#BC7B6F ;
+    cursor: pointer;
+}
+.read>h2{
+    margin: 10px;   
+}
+.read>p{
+    text-align: justify;
+    font-size: 20px;
+    margin-top: 20px;
+    line-height: 22px;
+}
+.btn-large{
+    font-size: 18px;
+    height: 40px;
+    width: 100px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 10px;
+}
+.btn-large:hover{
+    color: white;
+    background-color:#429155 ;
+    cursor: pointer;
+}
+input[type="text"]{
+    padding: 8px;
+    width: 50%;
+    margin-bottom: 10px;
+}
+textarea{
+    height: 65%;
+    width: 60%;
+    max-width: 70%;
+    max-height: 75%;
+    margin-bottom: 10px;
+}
+#del{
+    color:white;
+    background-color: #D41414;
+    font-size: 18px;
+    height: 40px;
+    width: 100px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 10px;
+}
+#del:hover{
+    font-size: 20px;
+    cursor: pointer;
+}
+::selection {
+  background: #ff6347; /* Change to your desired highlight color (e.g., Tomato) */
+  color: #ffffff;      /* Change to your desired text color (e.g., White) */
 }

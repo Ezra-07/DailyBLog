@@ -1,8 +1,12 @@
 <%if(locals.selectedBlog){%>
     <form method="POST" action="/update/<%=selectedBlog.id%>">
-    <input type="text" name="title" value="<%= selectedBlog.title %>">
-    <textarea name="content"><%= selectedBlog.content %></textarea>
-    <button type="submit">Update</button>
+        <label for="title">Title:</label>
+        <input type="text" name="title" value="<%= selectedBlog.title %>">
+        <br>
+        <label for="content">Content:</label>
+        <textarea name="content"><%= selectedBlog.content %></textarea>
+        <br>
+        <button class="btn-large" type="submit">Update</button>
     </form>
 <%}else{%>
     <h2>Select Blog to update</h2>

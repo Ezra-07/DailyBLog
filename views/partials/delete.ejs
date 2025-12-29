@@ -1,7 +1,7 @@
 <%if(locals.selectedBlog){%>
     <form method="POST" action="/delete/<%=selectedBlog.id%>">
-    <label>Confirm delete</label>
-    <button type="submit">Delete</button>
+    <label>Confirm deletion of blog: <%=selectedBlog.title%></label>
+    <button id="del" type="submit">Delete</button>
     </form>
 <%}else{%>
     <h2>Select Blog to delete</h2>
